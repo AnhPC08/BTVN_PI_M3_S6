@@ -18,6 +18,6 @@ describe("TDD - SmartCounter", () => {
   it("Bấm Giảm không được phép âm", () => {
     render(<SmartCounter />);
     fireEvent.click(screen.getByText("Giảm"));
-    expect(screen.getByTestId("count-display").textContent).toBe("0");
+    expect(screen.getByTestId("count-display").textContent).toBe("999");
   });
 });
